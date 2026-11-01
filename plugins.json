@@ -1,0 +1,159 @@
+{
+  "dsh": {
+    "minVersion": "0.1.5-rc.1",
+    "testedWith": "dsh-desktop 0.2.1-rc.5 (electron 44.7.0 / node 24.21.0)",
+    "profile": "desktop"
+  },
+  "comment": "spec 直接交给 `dsh plugin --profile desktop add`，因此既可以是 npm 版本号，也可以是 git 地址 + 提交。git 依赖钉在提交上以保证可复现。",
+  "plugins": [
+    {
+      "name": "@changfenhuang/dsh-genui",
+      "spec": "@changfenhuang/dsh-genui@0.15.0",
+      "kind": "npm"
+    },
+    {
+      "name": "@linxin666/dsh-client-ui-git-graph",
+      "spec": "@linxin666/dsh-client-ui-git-graph@0.4.12",
+      "kind": "npm"
+    },
+    {
+      "name": "@liustack/modsearch",
+      "spec": "@liustack/modsearch@5.10.11",
+      "kind": "npm"
+    },
+    {
+      "name": "@michengai/dsh-archive-manager",
+      "spec": "@michengai/dsh-archive-manager@1.1.22",
+      "kind": "npm"
+    },
+    {
+      "name": "@nanmicoder/dsh-agent-teams",
+      "spec": "@nanmicoder/dsh-agent-teams@0.1.28",
+      "kind": "npm"
+    },
+    {
+      "name": "@sakura12/oh-my-deepseekharness",
+      "spec": "@sakura12/oh-my-deepseekharness@0.7.0",
+      "kind": "npm"
+    },
+    {
+      "name": "@xmanrui/dsh-im",
+      "spec": "@xmanrui/dsh-im@5.8.0",
+      "kind": "npm"
+    },
+    {
+      "name": "beauticode-dsh",
+      "spec": "beauticode-dsh@1.0.30",
+      "kind": "npm"
+    },
+    {
+      "name": "billion-context",
+      "spec": "billion-context@0.1.209",
+      "kind": "npm"
+    },
+    {
+      "name": "dsh-better-sidebar",
+      "spec": "dsh-better-sidebar@0.28.2",
+      "kind": "npm"
+    },
+    {
+      "name": "dsh-collapse-paste",
+      "spec": "dsh-collapse-paste@0.2.4",
+      "kind": "npm"
+    },
+    {
+      "name": "dsh-context",
+      "spec": "dsh-context@0.78.2",
+      "kind": "npm"
+    },
+    {
+      "name": "dsh-git-plus",
+      "spec": "dsh-git-plus@0.1.59",
+      "kind": "npm"
+    },
+    {
+      "name": "dsh-ops",
+      "spec": "dsh-ops@0.4.4",
+      "kind": "npm"
+    },
+    {
+      "name": "dsh-remote",
+      "spec": "dsh-remote@0.8.67",
+      "kind": "npm"
+    },
+    {
+      "name": "dsh-session-recycle-bin",
+      "spec": "dsh-session-recycle-bin@0.5.0",
+      "kind": "npm"
+    },
+    {
+      "name": "dsh-whale-widget",
+      "spec": "dsh-whale-widget@0.4.2",
+      "kind": "npm"
+    },
+    {
+      "name": "dshmarket",
+      "spec": "dshmarket@1.73.3",
+      "kind": "npm"
+    },
+    {
+      "name": "@guowenzhang/dsh-claude-compat",
+      "spec": "github:zhang-guo-wen/dsh-claude-compat#2599e5647f735773ab44a49e12f29858b4c760dc",
+      "kind": "git",
+      "note": "上游 #master 会漂移，这里钉提交"
+    },
+    {
+      "name": "dsh-think-budget",
+      "spec": "github:superSizzzz/dsh-think-budget#fc9f7dba417e8921b517acb147373111d91b4a3b",
+      "kind": "git"
+    },
+    {
+      "name": "dsh-chat-perf-css",
+      "spec": "github:Light-EI/dsh-chat-perf-css#a50b57d38ae63c99d48ab2e0d1ca43a091ae79c6",
+      "kind": "git",
+      "note": "未发布到 npm，原机是本地克隆 + link"
+    },
+    {
+      "name": "dsh-right",
+      "spec": "github:iMankoppai/dsh-right#570116c5b20be76b4745d57b6708167542fab38b",
+      "kind": "git",
+      "note": "未发布到 npm，原机是本地克隆 + link"
+    },
+    {
+      "name": "dsh-scm",
+      "spec": "github:2757657887/dsh-scm#6c9dfb60066ef4743caed42c2c050735b3024b67",
+      "kind": "git",
+      "note": "VS Code 风格源代码管理面板；仓库自带构建产物，无需构建"
+    }
+  ],
+  "bundles": [
+    "@deepseek-ai/dsh-base",
+    "@deepseek-ai/dsh-web-app",
+    "@deepseek-ai/dsh-experimental-agent-team-profile",
+    "@deepseek-ai/dsh-experimental-auto-review",
+    "@deepseek-ai/dsh-experimental-inspector-profile",
+    "dshmarket",
+    "billion-context",
+    "dsh-better-sidebar",
+    "dsh-ops",
+    "dsh-context",
+    "@xmanrui/dsh-im",
+    "@nanmicoder/dsh-agent-teams",
+    "dsh-remote",
+    "beauticode-dsh",
+    "dsh-whale-widget",
+    "@linxin666/dsh-client-ui-git-graph",
+    "dsh-session-recycle-bin",
+    "@sakura12/oh-my-deepseekharness",
+    "@liustack/modsearch",
+    "@changfenhuang/dsh-genui",
+    "@michengai/dsh-archive-manager",
+    "dsh-think-budget",
+    "@guowenzhang/dsh-claude-compat",
+    "dsh-right",
+    "dsh-chat-perf-css",
+    "dsh-collapse-paste",
+    "dsh-git-plus",
+    "dsh-scm"
+  ]
+}
